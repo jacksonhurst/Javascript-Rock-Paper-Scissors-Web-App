@@ -1,7 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
-  // Document is now ready for jQuery.
-  // Now start the game when they click 'play'.
+
   
   $('#chooseRock').click(function(){
 		$('#userChoice').val('rock');
@@ -14,14 +13,14 @@ $(document).ready(function(){
 	});
   
   $('#play').click(function(){
-    // Remove play button
+   
     $('#play').addClass('hide');
-    // Show reset button
+   
     $('#reset').removeClass('hide');
-    // Tell jQuery to store the user input as userChoice
+
 	
     var userChoice = $('#userChoice').val();
-    // Execute CodeCademy JavaScript
+  
     var computerChoice = Math.random();
       if (computerChoice < 0.34) {
           computerChoice = "rock";
@@ -64,30 +63,28 @@ $(document).ready(function(){
 		  alert("Please click a picture or type rock, paper, or scissors! (It is case sensitive")
 	  }
       };
-      // Now, tell the user who won using the compare function
-      // Like this:
+     
       var winner = compare(userChoice, computerChoice);
-      // Show the winner!
+    
       $(winner).removeClass('hide');
     
-      // Now you add the 'text' from computerChoice
-      // into the '#computerChoice' div
+ 
     	$("#computerChoice").text("The Computer Chose " + computerChoice);
 		$("#computerChoice").removeClass("computerChoice");
-      // You can leave the console.log's for testing.
+  
       console.log("User Choice: " + userChoice);
       console.log("Computer Choice: " + computerChoice);
       console.log(compare(userChoice, computerChoice));
     
-      // Alright, the game is over, reset your divs / images.
+    
     $('#reset').click(function(){
-      // hide the winner
+    
       $(winner).addClass('hide');
-      // Hide reset button
+     
 	  $("#computerChoice").addClass("computerChoice");
 	  
       $('#reset').addClass('hide');
-      // Show play button
+    
       $('#play').removeClass('hide');
     });
     
