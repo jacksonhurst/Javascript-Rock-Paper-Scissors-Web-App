@@ -1,0 +1,54 @@
+@charset "utf-8"
+/* CSS Document */
+img{display: block;}
+
+.hide{
+  display: none;
+  visibility: hidden;
+}
+
+.computerChoice{
+  display: none;
+  visibility: hidden;
+}
+#input_wrapper{
+	text-align:center;
+	margin:0 auto;width:500px;
+}
+
+#choice_wrapper{
+	text-align:center;
+	margin:0 auto;width:500px;
+}
+#head{
+	font-size:30px;
+	text-align:center;
+	margin:0 auto;width:500px;
+}
+#head2{
+	font-size:20px;
+	text-align:center;
+	margin:0 auto;width:500px;
+}
+body{
+	background-image:url("background.png");background-repeat:repeat;
+	}
+
+#page_wrapper{
+	border:2px solid #a1a1a1;
+padding:10px 40px; 
+background:#dddddd;
+border-radius:25px;
+
+}
+#computerChoice{
+	text-align:center;
+	margin:0 auto;width:500px;
+}
+#result_wrapper{
+	text-align:center;
+	margin:0 auto;width:500px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
