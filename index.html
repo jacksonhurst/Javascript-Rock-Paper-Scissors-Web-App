@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+<div id="page_wrapper">
+<div id="head">
+<h1>Rock, Paper, Scissors!</h1>
+</div>
+<div id="head2">
+<h3>Click your choice or type rock, paper, or scissors!</h3>
+</div>
+<div id="game_wrapper">
+  <div id="input_wrapper">
+    <label for="userChoice">What do you pick?</label><input type="text" name="userChoice" id="userChoice" />
+    <button id="play">Play</button>
+    <button id="reset" class="hide">Reset</button>
+  </div>
+  
+  <div id="choice_wrapper">
+	<img id="chooseRock" class="" img src="rock.png" width="100" height="100" />
+    <img id="choosePaper" class="" img src="paper.png" width="100" height="100" />
+    <img id="chooseScissors" class="" img src="scissors.png" width="100" height="100" />
+</div>
+  <div id="computerChoice" class="computerChoice"></div>
+  <div id="result_wrapper">
+    <img id="rock_wins" class="hide" img src="rock-wins.png" width="500" height="500" />
+    <img id="paper_wins" class="hide" img src="paper-wins.png" width="500" height="500" />
+    <img id="scissors_wins" class="hide" img src="scissors-wins.png" width="500" height="500" />
+    <img id="tie_wins" class="hide" img src="tie.png" width="500" height="500" />
+  </div>
+</div>
+</div>
+</body>
+</html>
